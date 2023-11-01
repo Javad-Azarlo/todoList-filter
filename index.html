@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>todoApp</title>
+</head>
+<body>
+    <div class="container">
+        <h2>todoApp</h2>
+        <div class="input-section">
+            <input type="text" placeholder="add todo ... " id="task-input">
+            <input type="date" id="date-input">
+            <button class="add-button">Add</button>
+            <button class="edit-button">Edit</button>
+        </div>
+        <div class="todos-operator">
+            <div>
+                <button class="filter-todos" data-fill="All">All</button>
+                <button class="filter-todos" data-fill="Pending">Pending</button>
+                <button class="filter-todos" data-fill="Compeleted">Compeleted</button>
+            </div>
+            <button id="delete-all-btn">Delete All</button>
+        </div>
+    </div>
+    <div id="alert-message"></div>
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+   <script src="app.js"></script>
+   <script src="apptest.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
